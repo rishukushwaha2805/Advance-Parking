@@ -1,0 +1,196 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Advance Parking System</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        a {
+            color: rgb(44, 207, 212);
+            text-decoration: underline !important;
+        }
+
+        .container {
+            min-width: 450px;
+            background: url('abg.jpg') no-repeat center center;
+            background-size: cover;
+            height: 80vh;
+            padding: 50px;
+            display:flex;
+            justify-content:center;
+        }
+
+        .box {
+            width: max-content;
+            /* min-width: 1124px; */
+            display: flex;
+            /* padding: 0 1vw; */
+            justify-content: space-between;
+            align-items: center;
+            /* background-color: white; */
+            background-color: rgba(0, 0, 0, 0.3);
+        }
+
+
+        .mainBox {
+            width: 300px;
+            /* Adjust the width as needed */
+            padding: 20px;
+            margin: 0 10vw;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            /* background-color: #f9f9f9; */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+            background-color: rgba(0, 0, 0, 0.4);
+            /* Font styles */
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            font-weight: normal;
+            color: #333;
+        }
+
+        .mainBox h1 {
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .mainBox p {
+            font-size: 14px;
+            text-align: center;
+        }
+
+        .mainBox span {
+            display: block;
+            margin-top: 15px;
+        }
+
+        .mainBox input[type="email"],
+        .mainBox input[type="password"],
+        .mainBox button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            box-sizing: border-box;
+            /* Ensures padding and border are included in the element's total width and height */
+        }
+
+        .mainBox input[type="email"],
+        .mainBox input[type="password"] {
+            height: 40px;
+        }
+
+        .mainBox input[type="checkbox"] {
+            margin-top: 0;
+
+        }
+
+        .mainBox input[type="submit"] {
+            background-color: #4caf50;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            width: 100px;
+            height:40px;
+        }
+
+        .mainBox input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        .mainBox a {
+            text-decoration: none;
+            color: #007bff;
+        }
+
+        .mainBox a:hover {
+            text-decoration: underline;
+        }
+
+        .mainBox .row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            /* Align items with space between them */
+        }
+
+        .mainBox .row a {
+            margin-top: auto;
+            /* Adjust the vertical alignment */
+        }
+
+        .checkbox-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .checkbox-container input[type="checkbox"] {
+            margin-right: 10px;
+            /* Adjust spacing between checkbox and label */
+        }
+
+        .checkbox-container span {
+            font-size: 14px;
+            margin-top: 0;
+            color: #333;
+        }
+
+
+        .image img {
+            width: 50vw;
+            /* height: 500px; */
+        }
+
+        /* media query */
+        @media (max-width: 900px) {
+            .box {
+                width: max-content;
+            }
+
+            .image {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="mainBox">
+                <h1 style="color: white;">Login</h1>
+                <form action="#" method="post">
+
+                    <span style="color: white;">Email Address</span>
+                    <input type="email" name="email" id="" placeholder="you@example.com">
+                    <div class="row">
+                        <span style="color: white;">Password</span>
+                    </div>
+                    <input type="password" name="password" id="" placeholder="Enter 6character or more">
+                    <!-- <br> -->
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="remember-me" name="remember-me">
+                        <label for="remember-me"><span style="color: white;">Remember Me</span></label>
+                    </div>
+                    <span></span>
+                    <center>
+                        <input type="submit" value="Login">
+                        </center>
+                        
+                </form>
+            </div>
+            
+        </div>
+    </div>
+</body>
+
+</html>

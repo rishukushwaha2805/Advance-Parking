@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration | Advance Parking System</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        html {
+
+            background: url('sbg.jpg') no-repeat center center;
+            background-size: cover;
+            overflow: hidden;
+            min-width: 350px;
+        }
+
+        body {
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* height: 80vh; */
+        }
+
+        .form {
+            margin: 50px auto;
+            width: 400px;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+            font-family: Arial, sans-serif;
+        }
+
+        .form span {
+            display: block;
+            margin-bottom: 8px;
+            font-size: 16px;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .form input[type="text"],
+        .form input[type="email"],
+        .form input[type="password"],
+        .form input[type="number"] {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            color: #555;
+        }
+
+        .form input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background: #007bff;
+            border: none;
+            color: #fff;
+            cursor: pointer;
+            border-radius: 4px;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .form input[type="submit"]:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form action="#" method="post">
+            <div class="form">
+                <center>
+                    <br>
+                    <h1> Registration Form </h1>
+                    <br>
+                </center>
+                <span>First Name:</span>
+                <input type="text" name="first_name" id="" placeholder="Enter your first name" required>
+                <br>
+                <span>Last Name:</span>
+                <input type="text" name="last_name" id="" placeholder="Enter your last name" required>
+                <br>
+                <span>Email:</span>
+                <input type="email" name="email" id="" placeholder="Enter your email" required>
+                <br>
+                <span>Password:</span>
+                <input type="password" name="password" id="" placeholder="Enter your password" required>
+                <br>
+                <span>Mobile Number:</span>
+                <input type="number" name="mobile_number" id="" placeholder="Enter your number" required>
+                <br>
+                <input type="submit" value="Submit">
+                <br>
+                <a href="../login/index.html">Already have an account?</a>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
